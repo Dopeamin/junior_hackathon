@@ -43,13 +43,13 @@ export const Hero = () => {
           </Card>
         </div>
 
-        <div className="z-2 absolute top-10 right-40 floating">
+        <div className="z-2 absolute top-32 md:top-10 right-5 md:right-40 floating">
           <Card>
             <p className="text-6xl">👋</p>
           </Card>
         </div>
 
-        <div className="z-2 absolute top-20 left-20 floating">
+        <div className="z-2 absolute top-28 md:top-20 left-20 floating">
           <Card>
             <p className="text-9xl">👇</p>
           </Card>

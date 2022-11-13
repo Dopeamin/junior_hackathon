@@ -6,8 +6,6 @@ export const Header = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const handleScroll = () => {
-    const position = window.scrollY;
-    console.log(position);
     setPosition({ x: window.scrollX, y: window.scrollY });
   };
 
