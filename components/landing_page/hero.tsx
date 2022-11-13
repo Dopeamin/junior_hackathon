@@ -24,7 +24,7 @@ export const Hero = () => {
                 throw new Error("Function not implemented.");
               }}
             >
-              <p className="text-white text-xs font-light">Get Started 👋</p>
+              <p className="text-white text-xs font-light bouncing">Get Started 👋</p>
             </Button>
           </div>
         </Wrapper>
