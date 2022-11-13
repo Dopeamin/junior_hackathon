@@ -4,7 +4,6 @@ import { Header } from "../components/_shared/header";
 export default function Home() {
   return (
     <div>
-      <Header />
       <LandingPage />
     </div>
   );
