@@ -1,6 +1,7 @@
 import { About } from "./about";
 import { Feature } from "./feature";
 import { Hero } from "./hero";
+import { Try } from "./try";
 
 export const LandingPage = () => {
   return (
@@ -8,6 +9,7 @@ export const LandingPage = () => {
       <Hero />
       <Feature />
       <About />
+      <Try />
     </div>
   );
 };

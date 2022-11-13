@@ -33,7 +33,7 @@ export const Header = () => {
           <h1 className="w-1/4 text-base md:text-lg font-bold">
             APPLICATION NAME
           </h1>
-          <div className="flex flex-row justify-evenly flex-1 font-thin items-center">
+          <div className="flex flex-row justify-evenly flex-1 font-light items-center">
             <a className="text-xs">FEATURES</a>
 
             <a className="text-xs">PRODUCT</a>
