@@ -27,7 +27,7 @@ export const Pricing = () => {
                 <h3 className="text-6xl my-4 text-gray-900 tracking-widest">
                   80<span className="text-2xl">DT</span>
                 </h3>
-
+                <p className="text-xs font-light text-gray-900">Per Month</p>
                 <Button
                   onClick={function (): void {
                     throw new Error("Function not implemented.");
@@ -44,9 +44,9 @@ export const Pricing = () => {
                   Lorem ipsum dolor sit amet consectetur
                 </p>
                 <h3 className="text-6xl my-4 text-gray-900 tracking-widest">
-                  80<span className="text-2xl">DT</span>
+                  120<span className="text-2xl">DT</span>
                 </h3>
-
+                <p className="text-xs font-light text-gray-900">Per Month</p>
                 <Button
                   onClick={function (): void {
                     throw new Error("Function not implemented.");
@@ -63,8 +63,9 @@ export const Pricing = () => {
                   Lorem ipsum dolor sit amet consectetur
                 </p>
                 <h3 className="text-6xl my-4 text-gray-900 tracking-widest">
-                  80<span className="text-2xl">DT</span>
+                  160<span className="text-2xl">DT</span>
                 </h3>
+                <p className="text-xs font-light text-gray-900">Per Month</p>
 
                 <Button
                   onClick={function (): void {
