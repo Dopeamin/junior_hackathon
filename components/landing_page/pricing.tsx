@@ -17,7 +17,7 @@ export const Pricing = () => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
             quaerat totam ducimus velit omnis? Esse fugiat{" "}
           </h2>
-          <div className="flex flex-col lg:flex-row w-full items-end justify-between gap-10">
+          <div className="flex flex-col lg:flex-row w-full lg:items-end justify-between gap-10">
             <PricingCard big={false}>
               <div className="flex flex-col w-full items-center md:w-[250px] gap-4">
                 <h3 className="text-2xl text-gray-900">Pro</h3>
