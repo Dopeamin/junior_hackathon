@@ -8,7 +8,7 @@ import { Wrapper } from "../_shared/wrapper";
 export const Feature = () => {
   return (
     <Wrapper>
-      <div className="flex flex-col w-full justify-center items-center gap-10">
+      <div className="flex flex-col w-full justify-center items-center gap-10 gradient-radial py-16">
         <Badge text="Features" />
         <h2 className="max-w-[700px] my-4 text-center text-xl font-light tracking-wider">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum

@@ -1,6 +1,7 @@
 import { About } from "./about";
 import { Feature } from "./feature";
 import { Hero } from "./hero";
+import { Pricing } from "./pricing";
 import { Try } from "./try";
 
 export const LandingPage = () => {
@@ -10,6 +11,7 @@ export const LandingPage = () => {
       <Feature />
       <About />
       <Try />
+      <Pricing />
     </div>
   );
 };
