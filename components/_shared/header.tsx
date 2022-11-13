@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Wrapper } from "./wrapper";
 
@@ -23,15 +24,15 @@ export const Header = () => {
         className={clsx(
           "absolute w-full top-0 w-full left-0 transition-all duration-500 ease-in-out bg-white shadow-lg",
           {
-            "min-h-0": position.y < 100,
-            "min-h-[200px]": position.y >= 100,
+            "min-h-0": position.y < 50,
+            "min-h-[200px]": position.y >= 50,
           }
         )}
       ></div>
       <Wrapper>
         <div className="flex flex-row justify-between text-gray-900 items-center w-full">
           <h1 className="w-1/4 text-base md:text-lg font-bold">
-            APPLICATION NAME
+            <Link href="/">APPLICATION NAME</Link>
           </h1>
           <div className="flex flex-row justify-evenly flex-1 font-light items-center">
             <a className="text-xs">FEATURES</a>
@@ -42,13 +43,17 @@ export const Header = () => {
 
             <a className="text-xs">CONTACT</a>
             <div className="flex flex-row gap-4 items-center">
-              <a className="px-4 py-2 text-sm font-bold cursor-pointer">
-                Sign up
-              </a>
+              <Link href={"/signup"}>
+                <p className="px-4 py-2 text-sm font-bold cursor-pointer">
+                  Sign up
+                </p>
+              </Link>
 
-              <a className="bg-white shadow-lg rounded-full px-6 py-3 text-sm font-bold cursor-pointer">
-                Log in
-              </a>
+              <Link href={"/login"}>
+                <p className="bg-white shadow-lg rounded-full px-6 py-3 text-sm font-bold cursor-pointer">
+                  Log in
+                </p>
+              </Link>
             </div>
           </div>
         </div>
