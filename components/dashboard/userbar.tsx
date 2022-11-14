@@ -35,3 +35,25 @@ export const UserBar = () => {
     </div>
   );
 };
+
+export const UserBarMinimized = () => {
+  return (
+    <div className="fixed right-0 top-0 z-2 w-fit h-fit p-10">
+      <div className="relative w-full h-fit rounded-2xl px-4 py-2 flex flex-col gap-10 overflow-hidden">
+        <div className="absolute backdrop-blur-xl top-0 left-0 h-full w-full bg-gray-900 opacity-80"></div>
+        <div className="relative flex flex-row justify-end w-full gap-4 items-center">
+          <MessageIcon />
+          <BellIcon />
+          <div className="relative rounded-full w-9 h-9 overflow-hidden">
+            <Image
+              src="/johndoe.jpeg"
+              layout="fill"
+              objectFit="cover"
+              alt={"avatar"}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
