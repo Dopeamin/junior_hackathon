@@ -13,7 +13,7 @@ export const LandingPage = () => {
     <div className="flex flex-col overflow-x-hidden">
       <Header />
       <Hero />
-      <ViewPortBlock onEnterViewport={() => console.log('enter')}/>
+      <ViewPortBlock />
       <About />
       <Try />
       <Pricing />

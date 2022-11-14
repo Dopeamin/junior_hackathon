@@ -1,20 +1,20 @@
+import { Applications } from "../../components/dashboard/applications";
 import { DashboardLayout } from "../../components/dashboard/layout";
+import { Members } from "../../components/dashboard/members";
 import { Overview } from "../../components/dashboard/overview";
-
-const _slugs = ["overview", "documents"];
 
 const mappedComponents = [
   { slug: "overview", component: <Overview /> },
-  { slug: "documents", component: <div></div> },
+  { slug: "applications", component: <Applications /> },
+  { slug: "members", component: <Members /> },
 ];
 
 export async function getStaticPaths() {
   return {
-    paths: [
-      _slugs.map((slug) => {
-        return { params: { slug: slug } };
-      }),
-    ],
+    paths: mappedComponents.map((component) => {
+      return { params: { slug: component.slug } };
+    }),
+
     fallback: false,
   };
 }

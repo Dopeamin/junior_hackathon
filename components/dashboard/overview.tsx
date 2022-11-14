@@ -1,9 +1,10 @@
-import { Line } from "recharts";
 import { DocumentIcon } from "../_shared/icons/document.icon";
 import { DotsIcon } from "../_shared/icons/dots.icon";
 import { UserGroupIcon } from "../_shared/icons/user-group.icon";
+import { Chart } from "../_shared/chart";
 import { Tag } from "../_shared/tag";
 import { Card } from "./card";
+import Line from "./line";
 import { UserBar } from "./userbar";
 
 export const Overview = () => {
@@ -57,17 +58,14 @@ export const Overview = () => {
             </div>
           </Card>
           <Card bgColor="white">
-            <div className="flex relative flex-col gap-2 w-36">
-              <UserGroupIcon className="h-14 w-14" />
-              <h1 className="text-gray-500 text-2xl font-bold tracking-widest">
-                121
-              </h1>
-              <p className="text-gray-800 text-sm font-bold">
-                Recruted Employees
-              </p>
-              <div className="absolute top-0 -right-2 cursor-pointer">
-                <DotsIcon />
+            <div className="flex relative flex-col w-36">
+              <div className="w-full h-20 mb-4">
+                <Chart />
               </div>
+              <h1 className="text-blue-300 text-2xl font-bold tracking-widest">
+                4:<span className="text-pink-300">6</span>
+              </h1>
+              <p className="text-gray-800 text-sm font-bold">Gender Ratio</p>
             </div>
           </Card>
         </div>

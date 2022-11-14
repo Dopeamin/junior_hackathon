@@ -19,22 +19,22 @@ export const SideBar = ({
     {
       icon: <OverviewIcon />,
       text: "Overview",
-      route: "",
+      route: "/dashboard/overview",
     },
     {
       icon: <UserGroupIcon />,
       text: "Manage",
-      route: "",
+      route: "/dashboard/members",
     },
     {
       icon: <DocumentIcon />,
       text: "Documents",
-      route: "",
+      route: "/dashboard/applications",
     },
   ];
 
   const menu = menuItems.map((item) => (
-    <Element icon={item.icon} text={item.text} route={item.text} />
+    <Element icon={item.icon} text={item.text} route={item.route} />
   ));
 
   return (
