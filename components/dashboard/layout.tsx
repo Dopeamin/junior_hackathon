@@ -1,8 +1,9 @@
+import clsx from "clsx";
 import { useState } from "react";
-import { SideBar } from "../../components/dashboard/sidebar";
+import { SideBar } from "./sidebar";
 
-export default function Dashboard() {
-  const [collapsed, collapse] = useState(false);
+export const DashboardLayout = ({ children }: any) => {
+  const [collapsed, collapse] = useState(true);
 
   return (
     <div className="relative min-h-[100vh] w-full">
@@ -14,7 +15,14 @@ export default function Dashboard() {
         ></SideBar>
       </div>
       <div className="z-2 fixed -top-10 -left-[50%] w-full h-[100vh] gradient-radial-2"></div>
-      <div className="relative ml-40"></div>
+      <div
+        className={clsx("relative w-full transition-all duration-500 ease-out", {
+          " pl-40": collapsed,
+          " pl-72": !collapsed,
+        })}
+      >
+        {children}
+      </div>
     </div>
   );
-}
+};

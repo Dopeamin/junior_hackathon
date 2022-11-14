@@ -1,7 +1,7 @@
-export const UserGroupIcon = () => {
+export const UserGroupIcon = ({ className }: { className?: string }) => {
   return (
     <svg
-      className="w-6 h-6"
+      className={className || "w-6 h-6"}
       fill="none"
       stroke="currentColor"
       viewBox="0 0 24 24"
