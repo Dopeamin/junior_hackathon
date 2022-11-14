@@ -37,7 +37,9 @@ export default function Login() {
             />
 
             <FormControlLabel
-              control={<Checkbox color="default" name="saveAddress" value="yes" />}
+              control={
+                <Checkbox color="default" name="saveAddress" value="yes" />
+              }
               label="Remember me"
             />
             <div className="flex flex-row gap-4">

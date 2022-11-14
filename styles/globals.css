@@ -26,6 +26,10 @@
   );
 }
 
+.gradient-radial-2 {
+  background: radial-gradient(circle, rgba(221, 239, 255, 1) 0%, #f3f4f6 50%);
+}
+
 @keyframes bounce {
   0%,
   100% {
