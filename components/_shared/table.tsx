@@ -8,6 +8,7 @@ import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 import { Button } from "@mui/material";
 import { TrashIcon } from "./icons/trash.icon";
 import { TickIcon } from "./icons/tick.icon";
+import { FolderOpenIcon } from "./icons/folder-open.icon";
 
 function createData(
   name: string,
@@ -28,7 +29,8 @@ const columns = [
     headerName: "Full name",
     description: "This column has a value getter and is not sortable.",
     sortable: false,
-    width: 160,
+    minWidth: 160,
+    flex: 1,
     valueGetter: (params: any) =>
       `${params.row.firstName || ""} ${params.row.lastName || ""}`,
   },
@@ -39,6 +41,9 @@ const columns = [
     renderCell: (params: any) => {
       return (
         <div className="flex flex-row gap-2 justify-center items-center w-full">
+          <div className="cursor-pointer">
+            <FolderOpenIcon />
+          </div>
           <div className="cursor-pointer">
             <TickIcon />
           </div>
