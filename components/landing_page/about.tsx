@@ -31,7 +31,7 @@ export const About = () => {
           objectPosition="right"
         ></Image>
 
-        <div className="z-2 absolute top-28 md:top-20 -left-10 floating">
+        <div className="z-2 absolute bottom-28 md:bottom-20 -left-10 floating">
           <Card>
             <p className="text-9xl">🧑🏻‍💻</p>
           </Card>

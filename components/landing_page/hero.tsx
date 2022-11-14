@@ -29,7 +29,7 @@ export const Hero = () => {
           </div>
         </Wrapper>
       </div>
-      <div className="relative w-full max-w-[1200px] mx-auto relative h-[600px] -translate-y-[150px]">
+      <div className="relative w-full max-w-[900px] mx-auto relative h-[600px] -translate-y-[150px]">
         <Image
           src={"/screenshot.png"}
           alt={"screenshot"}
