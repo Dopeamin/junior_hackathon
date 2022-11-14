@@ -51,12 +51,12 @@ export const SideBar = ({
         <div className={clsx("w-full p-3")}>
           <div
             className={clsx(
-              "flex flex-row rounded-2xl px-3 py-2 bg-gray-100 gap-4 shadow-lg w-full transition-all hover:-translate-y-1 cursor-pointer",
+              "flex flex-row rounded-2xl px-3 py-2 bg-gray-100 gap-4 shadow-lg w-full transition-all hover:-translate-y-1 cursor-pointer items-center",
               { "!p-1 justify-center items-center": collapsed }
             )}
           >
             <SettingsIcon />
-            {!collapsed && <p className="">Settings</p>}
+            {!collapsed && <p className="text-xs">Settings</p>}
           </div>
         </div>
       </div>

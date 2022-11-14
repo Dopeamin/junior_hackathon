@@ -10,7 +10,7 @@ export const Hero = () => {
       <div className="z-1 relative w-full bg-blue-200 min-h-[600px] flex-col justify-center items-center pt-40">
         <Wrapper>
           <div className="flex flex-col gap-4 justify-center items-center max-w-[800px]">
-            <h1 className="text-4xl text-center font-normal  tracking-widest">
+            <h1 className="text-4xl text-center font-bold  tracking-widest">
               Manage Your HR Departement Using Our Cutting Edge Technology
             </h1>
             <p className="text-center my-5 text-xs text-gray-800">

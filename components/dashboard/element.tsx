@@ -13,7 +13,7 @@ export const Element = ({
         {icon}
       </div>
       <div className="flex-1">
-        <h2 className="text-blue-700 text-xs">{text}</h2>
+        <h2 className="text-gray-700 text-xs">{text}</h2>
       </div>
     </div>
   );
