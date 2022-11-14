@@ -33,8 +33,8 @@ export const SideBar = ({
     },
   ];
 
-  const menu = menuItems.map((item) => (
-    <Element icon={item.icon} text={item.text} route={item.route} />
+  const menu = menuItems.map((item, index) => (
+    <Element key={index} icon={item.icon} text={item.text} route={item.route} />
   ));
 
   return (
