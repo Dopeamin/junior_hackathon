@@ -10,14 +10,12 @@ export const About = () => {
         <div className="flex-1 flex flex-col w-full max-w-[600px]">
           <Badge text="Why choose us" />
           <h2 className="max-w-[700px] my-8 text-left text-2xl font-light tracking-wider m-0">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
-            quaerat totam ducimus velit omnis? Esse fugiat{" "}
+            Many recruitment processes have proven to be extremely biased,
+            making it a roadblock for hiring top talent.
           </h2>
           <p className="text-xs font-light text-gray-700">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-            veritatis commodi vitae nostrum ad aut aliquam, eligendi a dolore
-            deleniti non ab aspernatur odit repellat quo architecto error
-            voluptatibus officiis.
+            Our Solution is An app powered by AI that DETECTS hiring bias and significantly
+            IMPROVES your company's recruiting process
           </p>
         </div>
       </div>

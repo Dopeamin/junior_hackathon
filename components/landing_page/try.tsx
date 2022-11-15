@@ -41,8 +41,8 @@ export const Try = () => {
         <div className="flex-1 flex flex-col w-full max-w-[600px]">
           <Badge text="Try it now" />
           <h2 className="max-w-[700px] my-8 text-left text-2xl font-light tracking-wider m-0">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
-            quaerat totam ducimus velit omnis? Esse fugiat{" "}
+            We have a free trial version that you can try for a limited period
+            of 30 days, with all the functionalities unlocked
           </h2>
           <div className="flex flex-row items-center gap-4">
             <Button

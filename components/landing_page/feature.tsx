@@ -26,8 +26,8 @@ export const Feature = () => {
         >
           <Badge text="Features" />
           <h2 className="max-w-[700px] my-4 text-center text-xl font-light tracking-wider">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
-            quaerat totam ducimus velit omnis? Esse fugiat{" "}
+            We offer a variety of tools and features that help ensure the good
+            management of your HR Department
           </h2>
 
           <div className="flex flex-col lg:flex-row w-full justify-between gap-10">
@@ -36,8 +36,8 @@ export const Feature = () => {
                 <ReportIcon />
                 <h3 className="text-blue-900">Reports</h3>
                 <p className="text-xs font-light text-gray-700">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
-                  nihil reiciendis aliquid{" "}
+                  Automatically summarize your candidates data and compatibility
+                  to your job offer
                 </p>
               </div>
             </Card>
@@ -48,8 +48,8 @@ export const Feature = () => {
                   <ChartIcon />
                   <h3 className="text-yellow-600">Analytics</h3>
                   <p className="text-xs font-light text-gray-700">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Eum nihil reiciendis aliquid{" "}
+                    We analyse your latest decisions and choices to find the
+                    best way to improve your recrutement process
                   </p>
                 </div>
               </Card>
@@ -61,8 +61,7 @@ export const Feature = () => {
                   <SliderIcon />
                   <h3 className="text-violet-900">Costumizable</h3>
                   <p className="text-xs font-light text-gray-700">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Eum nihil reiciendis aliquid{" "}
+                    Costumize your recrutement strategy to your needs and goals
                   </p>
                 </div>
               </Card>

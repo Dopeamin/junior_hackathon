@@ -15,10 +15,9 @@ export const Hero = () => {
               Manage Your HR Departement Using Our Cutting Edge Technology
             </h1>
             <p className="text-center my-5 text-xs text-gray-800">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-              quasi hic architecto numquam exercitationem perspiciatis in
-              necessitatibus! Aperiam officiis quaerat nesciunt omnis, ipsa
-              laudantium quis voluptatem cumque vel est! Dolor?
+              Manage your job offers , review your applications, invite your
+              team and keep track of your statistics and ensure a diverse
+              recrutement process
             </p>
             <Button
               onClick={() => {

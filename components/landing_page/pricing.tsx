@@ -14,15 +14,14 @@ export const Pricing = () => {
         <div className="flex flex-col w-full justify-center items-center gap-10">
           <Badge text="Pricing" />
           <h2 className="max-w-[700px] my-4 text-center text-xl font-light tracking-wider">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
-            quaerat totam ducimus velit omnis? Esse fugiat{" "}
+            We have several plans, choose the one that fits your needs the best
           </h2>
           <div className="flex flex-col lg:flex-row w-full lg:items-end justify-between gap-10">
             <PricingCard big={false}>
               <div className="flex flex-col w-full items-center md:w-[250px] gap-4">
                 <h3 className="text-2xl text-gray-900">Pro</h3>
-                <p className="text-xs font-light text-gray-900">
-                  Lorem ipsum dolor sit amet consectetur
+                <p className="text-xs font-light text-gray-900 text-center">
+                  Up to 3 HR members in your team & 10 job offers a month
                 </p>
                 <h3 className="text-6xl my-4 text-gray-900 tracking-widest">
                   80<span className="text-2xl">DT</span>
@@ -41,7 +40,7 @@ export const Pricing = () => {
               <div className="flex flex-col w-full h-full justify-between items-center md:w-[250px] gap-4">
                 <h3 className="text-2xl text-gray-900">Business</h3>
                 <p className="text-xs font-light text-gray-900">
-                  Lorem ipsum dolor sit amet consectetur
+                  Up to 10 HR Member & unlimited job offers
                 </p>
                 <h3 className="text-6xl my-4 text-gray-900 tracking-widest">
                   120<span className="text-2xl">DT</span>
@@ -60,7 +59,7 @@ export const Pricing = () => {
               <div className="flex flex-col w-full items-center md:w-[250px] gap-4">
                 <h3 className="text-2xl text-gray-900">Buisiness Plus</h3>
                 <p className="text-xs font-light text-gray-900">
-                  Lorem ipsum dolor sit amet consectetur
+                  Unlimited Members and unlimited Job Offers
                 </p>
                 <h3 className="text-6xl my-4 text-gray-900 tracking-widest">
                   160<span className="text-2xl">DT</span>
