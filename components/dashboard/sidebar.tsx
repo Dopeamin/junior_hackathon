@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { ArrowRightIcon } from "../_shared/icons/arrow-right.icon";
@@ -45,7 +46,19 @@ export const SideBar = ({
       })}
     >
       <div className="bg-gray-50 rounded-2xl shadow-lg w-full h-full overflow-hidden flex flex-col justify-between">
-        <div className="mt-4">
+        <div className="mt-4 flex flex-col">
+          <div
+            className={clsx("relative w-10 h-8 mx-auto transition-all duration-500 ease-out", {
+              "!w-20": !collapsed,
+            })}
+          >
+            <Image
+              src="/logo-without-moto.svg"
+              layout="fill"
+              objectFit="contain"
+              alt="logo"
+            />
+          </div>
           <div className="flex flex-col w-full mt-20">{menu}</div>
         </div>
         <div className={clsx("w-full p-3")}>

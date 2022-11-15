@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Wrapper } from "./wrapper";
@@ -31,9 +32,16 @@ export const Header = () => {
       ></div>
       <Wrapper>
         <div className="flex flex-row justify-between text-gray-900 items-center w-full">
-          <h1 className="w-1/4 text-base md:text-lg font-bold">
-            <Link href="/">APPLICATION NAME</Link>
-          </h1>
+          <Link href="/">
+            <div className="relative w-40 h-8">
+              <Image
+                src="/logo-without-moto.svg"
+                layout="fill"
+                objectFit="contain"
+                alt="logo"
+              />
+            </div>
+          </Link>
           <div className="flex flex-row justify-evenly flex-1 font-light items-center">
             <a className="text-xs">FEATURES</a>
 
