@@ -27,7 +27,10 @@ export const Offer = ({
         <h1 className="text-lg font-semibold">{title.toUpperCase()}</h1>
         <div className="flex flex-row gap-2 flew-wrap w-full">
           {tags.map((tag) => (
-            <div className="w-fit px-2 text-xs py-[1px] bg-gray-100 border border-gray-300 text-gray-500 rounded">
+            <div
+              key={tag}
+              className="w-fit px-2 text-xs py-[1px] bg-gray-100 border border-gray-300 text-gray-500 rounded"
+            >
               {tag}
             </div>
           ))}
