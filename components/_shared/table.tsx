@@ -57,7 +57,7 @@ const columns = [
 ];
 
 const rows = [
-  { id: 1, lastName: "Snow", firstName: "Jon", age: 35 },
+  { id: 1, lastName: "Hamdouni", firstName: "Mohamed Amine", age: 22 },
   { id: 2, lastName: "Lannister", firstName: "Cersei", age: 42 },
   { id: 3, lastName: "Lannister", firstName: "Jaime", age: 45 },
   { id: 4, lastName: "Stark", firstName: "Arya", age: 16 },
@@ -68,7 +68,7 @@ const rows = [
   { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
 ];
 
-export function DataTable() {
+export function DataTable({ onSelect }: { onSelect?: () => void }) {
   return (
     <div style={{ height: 400, width: "100%" }}>
       <DataGrid
@@ -82,6 +82,7 @@ export function DataTable() {
             cursor: "pointer",
           },
         }}
+        onRowClick={onSelect}
       />
     </div>
   );
