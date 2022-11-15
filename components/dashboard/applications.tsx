@@ -11,7 +11,7 @@ export const Applications = () => {
         </h1>
         <UserBarMinimized />
       </div>
-      <p className="text-lg font-light text-blue-900 mb-6">List of Applicantions</p>
+      <p className="text-lg font-light text-blue-900 mb-6">List of Applications into this offer</p>
       <div className="flex flex-col pr-10">
         <div className="flex flex-col bg-white rounded-xl shadow-lg ">
           <DataTable />

@@ -71,14 +71,14 @@ export const Overview = () => {
         </div>
         <div className="flex flex-row gap-6">
           <div className="flex flex-col gap-6">
-            <Card bgColor="white">
+            <Card bgColor="#9fc7eb">
               <div className="flex relative flex-col gap-2 w-60">
-                <p className="text-gray-800 text-xl font-bold">New Employees</p>
+                <p className="text-gray-50 text-xl font-bold">Current Score</p>
                 <div className="flex flex-row items-end gap-5">
-                  <h1 className="text-gray-500 text-4xl font-bold tracking-widest">
+                  <h1 className="text-gray-50 text-4xl font-bold tracking-widest">
                     1021
                   </h1>
-                  <Tag color="red" text="-10%" />
+                  <Tag color="green" text="+10%" />
                 </div>
               </div>
             </Card>
@@ -89,7 +89,7 @@ export const Overview = () => {
                   <h1 className="text-gray-500 text-4xl font-bold tracking-widest">
                     1021
                   </h1>
-                  <Tag color="green" text="+10%" />
+                  <Tag color="red" text="-10%" />
                 </div>
               </div>
             </Card>

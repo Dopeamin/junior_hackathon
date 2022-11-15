@@ -1,11 +1,12 @@
 import { Applications } from "../../components/dashboard/applications";
 import { DashboardLayout } from "../../components/dashboard/layout";
 import { Members } from "../../components/dashboard/members";
+import { Offers } from "../../components/dashboard/offers";
 import { Overview } from "../../components/dashboard/overview";
 
 const mappedComponents = [
   { slug: "overview", component: <Overview /> },
-  { slug: "applications", component: <Applications /> },
+  { slug: "applications", component: <Offers /> },
   { slug: "members", component: <Members /> },
 ];
 

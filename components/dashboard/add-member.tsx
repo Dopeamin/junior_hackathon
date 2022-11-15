@@ -34,8 +34,8 @@ export const AddMember = () => {
         Please fill in the member details
       </p>
       <div className="relative z-10 flex flex-1 w-full pr-10 mt-10">
-        <div className="w-full backdrop-blur rounded-2xl ">
-          <div className="p-10 shadow-lg rounded-2xl">
+        <div className="w-full rounded-2xl ">
+          <div className="p-10 shadow-lg bg-gray-50 bg-opacity-40 backdrop-blur rounded-2xl">
             <h1 className="font-semibold text-2xl mb-2 text-slate-600">
               Account Information
             </h1>
@@ -75,7 +75,7 @@ export const AddMember = () => {
             </Grid>
           </div>
 
-          <div className="p-10 shadow-lg rounded-2xl mt-10">
+          <div className="p-10 shadow-lg rounded-2xl bg-gray-50 bg-opacity-70 backdrop-blur mt-10">
             <h1 className="font-semibold text-2xl mb-2 text-slate-600 ">
               Personal Information
             </h1>
