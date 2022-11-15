@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Router from "next/router";
 import { useState, useEffect } from "react";
 import { Button } from "../_shared/button";
 import { Wrapper } from "../_shared/wrapper";
@@ -20,11 +21,13 @@ export const Hero = () => {
               laudantium quis voluptatem cumque vel est! Dolor?
             </p>
             <Button
-              onClick={function (): void {
-                throw new Error("Function not implemented.");
+              onClick={() => {
+                Router.push("signup");
               }}
             >
-              <p className="text-white text-xs font-light bouncing">Get Started 👋</p>
+              <p className="text-white text-xs font-light bouncing">
+                Get Started 👋
+              </p>
             </Button>
           </div>
         </Wrapper>

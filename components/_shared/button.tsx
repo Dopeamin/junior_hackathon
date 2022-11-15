@@ -17,6 +17,7 @@ export const Button = ({
         "cursor-pointer hover:-translate-y-1 hover:shadow-lg": !disabled,
         "!bg-gray-700 cursor-not-allowed": disabled,
       })}
+      onClick={onClick}
     >
       {children}
     </div>

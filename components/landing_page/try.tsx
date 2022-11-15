@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import Image from "next/image";
+import Router from "next/router";
 import { useRef } from "react";
 import { useInViewport } from "react-in-viewport";
 import { Badge } from "../_shared/badge";
@@ -45,8 +46,8 @@ export const Try = () => {
           </h2>
           <div className="flex flex-row items-center gap-4">
             <Button
-              onClick={function (): void {
-                throw new Error("Function not implemented.");
+              onClick={() => {
+                Router.push("signup");
               }}
             >
               <p className="text-white text-xs font-light">Try it free</p>
