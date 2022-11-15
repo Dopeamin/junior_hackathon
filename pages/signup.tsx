@@ -12,6 +12,7 @@ import {
   Button,
   Box,
 } from "@mui/material";
+import Router from "next/router";
 import { useState } from "react";
 import { Header } from "../components/_shared/header";
 import { Wrapper } from "../components/_shared/wrapper";
@@ -22,11 +23,15 @@ export default function SignUp() {
   const steps = [
     "Account Information",
     "Personal Information",
-    "Recrutement Preferences",
+    "Company Informations",
   ];
 
   const handleNext = () => {
-    setActiveStep(activeStep + 1);
+    if (activeStep === steps.length - 1) {
+      Router.push("/dashboard");
+    } else {
+      setActiveStep(activeStep + 1);
+    }
   };
 
   const handleBack = () => {
@@ -39,6 +44,8 @@ export default function SignUp() {
         return <AccountInformation />;
       case 1:
         return <PersonalInformation />;
+      case 2:
+        return <CompanyInformation />;
     }
   }
 
@@ -76,6 +83,72 @@ export default function SignUp() {
               name="repeatPassword"
               label="Repeat Password"
               fullWidth
+              variant="standard"
+            />
+          </Grid>
+        </Grid>
+      </>
+    );
+  };
+
+  const RecrutementInformation = () => {};
+
+  const CompanyInformation = () => {
+    return (
+      <>
+        <h1 className="font-semibold text-4xl mb-10">Company Information</h1>
+        <Grid container spacing={3}>
+          <Grid item xs={12}>
+            <TextField
+              required
+              id="companyName"
+              name="companyName"
+              label="Company Name"
+              type="text"
+              fullWidth
+              variant="standard"
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <TextField
+              required
+              id="address1"
+              name="address1"
+              label="Address line 1"
+              fullWidth
+              autoComplete="shipping address-line1"
+              variant="standard"
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <TextField
+              id="address2"
+              name="address2"
+              label="Address line 2"
+              fullWidth
+              autoComplete="shipping address-line2"
+              variant="standard"
+            />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <TextField
+              required
+              id="phone"
+              name="phone"
+              label="Phone Number"
+              fullWidth
+              autoComplete="shipping phone"
+              variant="standard"
+            />
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <TextField
+              required
+              id="country"
+              name="country"
+              label="Country"
+              fullWidth
+              autoComplete="shipping country"
               variant="standard"
             />
           </Grid>
@@ -195,18 +268,21 @@ export default function SignUp() {
 
             <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
               {activeStep !== 0 && (
-                <Button onClick={handleBack} sx={{ mt: 3, ml: 1 }} 
-                style={{color:"black"}}>
+                <Button
+                  onClick={handleBack}
+                  sx={{ mt: 3, ml: 1 }}
+                  style={{ color: "black" }}
+                >
                   Back
                 </Button>
               )}
               <Button
                 variant="contained"
                 onClick={handleNext}
-                style={{background:"black"}}
+                style={{ background: "black" }}
                 sx={{ mt: 3, ml: 1 }}
               >
-                {activeStep === steps.length - 1 ? "Place order" : "Next"}
+                {activeStep === steps.length - 1 ? "Sign Up" : "Next"}
               </Button>
             </Box>
           </div>

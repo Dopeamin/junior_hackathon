@@ -33,9 +33,9 @@ export const AddMember = () => {
       <p className="text-base text-gray-800 ml-8">
         Please fill in the member details
       </p>
-      <div className="relative z-10 flex flex-1 w-full pr-10 mt-10">
-        <div className="w-full rounded-2xl ">
-          <div className="p-10 shadow-lg bg-gray-50 bg-opacity-40 backdrop-blur rounded-2xl">
+      <div className="relative z-10 flex flex-col flex-1 w-full pr-10 mt-10">
+        <div className="w-full rounded-2xl flex flex-row-reverse gap-4 items-start">
+          <div className="flex-2 p-10 shadow-lg bg-gray-50 bg-opacity-40 backdrop-blur rounded-2xl">
             <h1 className="font-semibold text-2xl mb-2 text-slate-600">
               Account Information
             </h1>
@@ -75,7 +75,7 @@ export const AddMember = () => {
             </Grid>
           </div>
 
-          <div className="p-10 shadow-lg rounded-2xl bg-gray-50 bg-opacity-70 backdrop-blur mt-10">
+          <div className="flex-5 p-10 shadow-lg rounded-2xl bg-gray-50 bg-opacity-70 backdrop-blur">
             <h1 className="font-semibold text-2xl mb-2 text-slate-600 ">
               Personal Information
             </h1>
@@ -167,16 +167,16 @@ export const AddMember = () => {
               </Grid>
             </Grid>
           </div>
-          <div className="flex w-full mt-10">
-            <Button
-              disabled={true}
-              onClick={function (): void {
-                throw new Error("Function not implemented.");
-              }}
-            >
-              <p className="text-gray-50">Invite Team Member</p>
-            </Button>
-          </div>
+        </div>
+        <div className="flex w-full mt-10">
+          <Button
+            disabled={true}
+            onClick={function (): void {
+              throw new Error("Function not implemented.");
+            }}
+          >
+            <p className="text-gray-50">Invite Team Member</p>
+          </Button>
         </div>
       </div>
     </div>
