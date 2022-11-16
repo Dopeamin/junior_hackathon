@@ -15,7 +15,7 @@ export const About = () => {
           </h2>
           <p className="text-xs font-light text-gray-700">
             Our Solution is An app powered by AI that DETECTS hiring bias and significantly
-            IMPROVES your company's recruiting process
+            IMPROVES your companyss recruiting process
           </p>
         </div>
       </div>
